@@ -1,27 +1,37 @@
 [
 	{
-		"file": "D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\Source\\KrazyKarts\\KrazyKarts.Build.cs",
-		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\.vscode\\compileCommands_KrazyKarts\\KrazyKarts.211.rsp\"",
+		"file": "D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\Source\\KrazyKarts\\GoKart.cpp",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\.vscode\\compileCommands_KrazyKarts\\KrazyKarts.211.rsp\"",
 		"directory": "D:\\Program files HDD\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\Source\\KrazyKarts\\KrazyKarts.cpp",
-		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\.vscode\\compileCommands_KrazyKarts\\KrazyKarts.211.rsp\"",
+		"file": "D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\Source\\KrazyKarts\\GoKart.h",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\.vscode\\compileCommands_KrazyKarts\\KrazyKarts.211.rsp\"",
 		"directory": "D:\\Program files HDD\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\Source\\KrazyKarts\\KrazyKarts.h",
-		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\.vscode\\compileCommands_KrazyKarts\\KrazyKarts.211.rsp\"",
+		"file": "D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\Source\\KrazyKarts\\KrazyKarts.Build.cs",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\.vscode\\compileCommands_KrazyKarts\\KrazyKarts.211.rsp\"",
 		"directory": "D:\\Program files HDD\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\Source\\KrazyKarts\\KrazyKartsGameModeBase.cpp",
-		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\.vscode\\compileCommands_KrazyKarts\\KrazyKarts.211.rsp\"",
+		"file": "D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\Source\\KrazyKarts\\KrazyKarts.cpp",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\.vscode\\compileCommands_KrazyKarts\\KrazyKarts.211.rsp\"",
 		"directory": "D:\\Program files HDD\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\Source\\KrazyKarts\\KrazyKartsGameModeBase.h",
-		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\.vscode\\compileCommands_KrazyKarts\\KrazyKarts.211.rsp\"",
+		"file": "D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\Source\\KrazyKarts\\KrazyKarts.h",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\.vscode\\compileCommands_KrazyKarts\\KrazyKarts.211.rsp\"",
+		"directory": "D:\\Program files HDD\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\Source\\KrazyKarts\\KrazyKartsGameModeBase.cpp",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\.vscode\\compileCommands_KrazyKarts\\KrazyKarts.211.rsp\"",
+		"directory": "D:\\Program files HDD\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\Source\\KrazyKarts\\KrazyKartsGameModeBase.h",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\.vscode\\compileCommands_KrazyKarts\\KrazyKarts.211.rsp\"",
 		"directory": "D:\\Program files HDD\\UE_5.0\\Engine\\Source"
 	}
 ]

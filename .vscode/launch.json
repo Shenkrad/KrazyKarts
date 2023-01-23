@@ -4,7 +4,7 @@
 		{
 			"name": "Launch KrazyKarts (Debug)",
 			"request": "launch",
-			"program": "D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+			"program": "D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
 			"preLaunchTask": "KrazyKarts Win64 Debug Build",
 			"args": [
 			],
@@ -20,7 +20,7 @@
 		{
 			"name": "Launch KrazyKarts (DebugGame)",
 			"request": "launch",
-			"program": "D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+			"program": "D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
 			"preLaunchTask": "KrazyKarts Win64 DebugGame Build",
 			"args": [
 			],
@@ -36,7 +36,7 @@
 		{
 			"name": "Launch KrazyKarts (Development)",
 			"request": "launch",
-			"program": "D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\Binaries\\Win64\\UnrealGame.exe",
+			"program": "D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\Binaries\\Win64\\UnrealGame.exe",
 			"preLaunchTask": "KrazyKarts Win64 Development Build",
 			"args": [
 			],
@@ -52,7 +52,7 @@
 		{
 			"name": "Launch KrazyKarts (Test)",
 			"request": "launch",
-			"program": "D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+			"program": "D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
 			"preLaunchTask": "KrazyKarts Win64 Test Build",
 			"args": [
 			],
@@ -68,7 +68,7 @@
 		{
 			"name": "Launch KrazyKarts (Shipping)",
 			"request": "launch",
-			"program": "D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+			"program": "D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
 			"preLaunchTask": "KrazyKarts Win64 Shipping Build",
 			"args": [
 			],
@@ -87,7 +87,7 @@
 			"program": "D:\\Program files HDD\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
 			"preLaunchTask": "KrazyKartsEditor Win64 Debug Build",
 			"args": [
-				"D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\KrazyKarts.uproject"
+				"D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\KrazyKarts.uproject"
 			],
 			"cwd": "D:\\Program files HDD\\UE_5.0",
 			"stopAtEntry": false,
@@ -104,7 +104,7 @@
 			"program": "D:\\Program files HDD\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
 			"preLaunchTask": "KrazyKartsEditor Win64 DebugGame Build",
 			"args": [
-				"D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\KrazyKarts.uproject"
+				"D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\KrazyKarts.uproject"
 			],
 			"cwd": "D:\\Program files HDD\\UE_5.0",
 			"stopAtEntry": false,
@@ -121,7 +121,7 @@
 			"program": "D:\\Program files HDD\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
 			"preLaunchTask": "KrazyKartsEditor Win64 Development Build",
 			"args": [
-				"D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\KrazyKarts.uproject"
+				"D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\KrazyKarts.uproject"
 			],
 			"cwd": "D:\\Program files HDD\\UE_5.0",
 			"stopAtEntry": false,
@@ -140,7 +140,7 @@
 			"args": [
 				"-projectfiles",
 				"-vscode",
-				"-project=D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\KrazyKarts.uproject",
+				"-project=D:\\Unreal Projects\\Multiplayer\\KrazyKarts\\KrazyKarts.uproject",
 				"-game",
 				"-engine"
 			],
