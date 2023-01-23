@@ -1,0 +1,152 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch KrazyKarts (Debug)",
+			"request": "launch",
+			"program": "D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+			"preLaunchTask": "KrazyKarts Win64 Debug Build",
+			"args": [
+			],
+			"cwd": "D:\\Program files HDD\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Program files HDD\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch KrazyKarts (DebugGame)",
+			"request": "launch",
+			"program": "D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+			"preLaunchTask": "KrazyKarts Win64 DebugGame Build",
+			"args": [
+			],
+			"cwd": "D:\\Program files HDD\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Program files HDD\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch KrazyKarts (Development)",
+			"request": "launch",
+			"program": "D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\Binaries\\Win64\\UnrealGame.exe",
+			"preLaunchTask": "KrazyKarts Win64 Development Build",
+			"args": [
+			],
+			"cwd": "D:\\Program files HDD\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Program files HDD\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch KrazyKarts (Test)",
+			"request": "launch",
+			"program": "D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+			"preLaunchTask": "KrazyKarts Win64 Test Build",
+			"args": [
+			],
+			"cwd": "D:\\Program files HDD\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Program files HDD\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch KrazyKarts (Shipping)",
+			"request": "launch",
+			"program": "D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+			"preLaunchTask": "KrazyKarts Win64 Shipping Build",
+			"args": [
+			],
+			"cwd": "D:\\Program files HDD\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Program files HDD\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch KrazyKartsEditor (Debug)",
+			"request": "launch",
+			"program": "D:\\Program files HDD\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+			"preLaunchTask": "KrazyKartsEditor Win64 Debug Build",
+			"args": [
+				"D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\KrazyKarts.uproject"
+			],
+			"cwd": "D:\\Program files HDD\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Program files HDD\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch KrazyKartsEditor (DebugGame)",
+			"request": "launch",
+			"program": "D:\\Program files HDD\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+			"preLaunchTask": "KrazyKartsEditor Win64 DebugGame Build",
+			"args": [
+				"D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\KrazyKarts.uproject"
+			],
+			"cwd": "D:\\Program files HDD\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Program files HDD\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch KrazyKartsEditor (Development)",
+			"request": "launch",
+			"program": "D:\\Program files HDD\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+			"preLaunchTask": "KrazyKartsEditor Win64 Development Build",
+			"args": [
+				"D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\KrazyKarts.uproject"
+			],
+			"cwd": "D:\\Program files HDD\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Program files HDD\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "coreclr",
+			"request": "launch",
+			"program": "D:\\Program files HDD\\UE_5.0\\Engine\\Binaries\\DotNET\\UnrealBuildTool\\UnrealBuildTool",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=D:\\Unreal Projects\\Multiplayer\\Krazy_Karts\\KrazyKarts.uproject",
+				"-game",
+				"-engine"
+			],
+			"console": "externalTerminal",
+			"stopAtEntry": false,
+			"cwd": "D:\\Program files HDD\\UE_5.0"
+		}
+	]
+}
