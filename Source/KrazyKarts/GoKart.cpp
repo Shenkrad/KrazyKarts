@@ -23,7 +23,9 @@ void AGoKart::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	FVector Force = GetActorForwardVector() * MaxDrivingForce * Throttle;
+	FVector Force = GetActorForwardVector() * MaxDrivingForce * Throttle;	
+	Force += CalculateAirResistance(Force);
+
 	FVector Acceleration = Force / Mass;
 
 	Velocity += Acceleration * DeltaTime;
@@ -77,3 +79,7 @@ void AGoKart::ApplyRotation(float DeltaTime)
 	AddActorWorldRotation(RotationDelta);
 }
 
+FVector AGoKart::CalculateAirResistance(FVector Force)
+{
+	return -Velocity.GetSafeNormal() * Velocity.SizeSquared() * DragCoefficient;
+}

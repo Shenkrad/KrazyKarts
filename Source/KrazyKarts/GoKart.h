@@ -39,6 +39,10 @@ private:
 	UPROPERTY(EditAnywhere)
 	float MaxDegreesPerSecond = 90;
 
+	// Higher means more drag
+	UPROPERTY(EditAnywhere)
+	float DragCoefficient = 16;
+
 	float Throttle;
 	float SteeringThrow;
 
@@ -51,5 +55,7 @@ private:
 	void UpdateLocationFromVelocity(float DeltaTime);
 
 	void ApplyRotation(float DeltaTime);
+
+	FVector CalculateAirResistance(FVector Force);
 
 };
