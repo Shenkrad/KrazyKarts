@@ -3,6 +3,8 @@
 
 #include "GoKart.h"
 
+#include "Components/SkeletalMeshComponent.h"
+
 // Sets default values
 AGoKart::AGoKart()
 {
@@ -23,11 +25,11 @@ void AGoKart::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	FVector Force = GetActorForwardVector() * MaxDrivingForce * Throttle;	
-	Force += CalculateAirResistance(Force);
+	Force = GetActorForwardVector() * MaxDrivingForce * Throttle;	
+	Force += GetAirResistance();
+	Force += GetRollingResistance();
 
 	FVector Acceleration = Force / Mass;
-
 	Velocity += Acceleration * DeltaTime;
 
 	ApplyRotation(DeltaTime);
@@ -79,7 +81,14 @@ void AGoKart::ApplyRotation(float DeltaTime)
 	AddActorWorldRotation(RotationDelta);
 }
 
-FVector AGoKart::CalculateAirResistance(FVector Force)
+FVector AGoKart::GetAirResistance()
 {
 	return -Velocity.GetSafeNormal() * Velocity.SizeSquared() * DragCoefficient;
+}
+
+FVector AGoKart::GetRollingResistance()
+{	
+	float AccelerationDueToGravity = -GetWorld()->GetGravityZ() / 100;
+	float NormalForce = Mass * AccelerationDueToGravity;
+	return -Velocity.GetSafeNormal() * RollingResistanceCoefficient * NormalForce;
 }
