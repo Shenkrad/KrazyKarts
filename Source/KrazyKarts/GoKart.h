@@ -7,21 +7,7 @@
 #include "GoKartMovementComponent.h"
 #include "GoKart.generated.h"
 
-USTRUCT()
-struct FGoKartState
-{
-    GENERATED_BODY()
-
-	UPROPERTY()
-	FTransform Transform;
-
-	UPROPERTY()
-	FVector Velocity;
-
-	UPROPERTY()
-	FGoKartMove LastMove;
-
-};
+class UGoKartMovementReplicator;
 
 UCLASS()
 class KRAZYKARTS_API AGoKart : public APawn
@@ -45,23 +31,13 @@ public:
 
 private:
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(VisibleAnywhere)
 	UGoKartMovementComponent* MovementComponent;
 
-	// Queue of unacknowledge moves from the client to the server
-	TArray<FGoKartMove> UnacknowledgeMoves;
-
-	UPROPERTY(ReplicatedUsing = OnRep_ServerState)
-	FGoKartState ServerState;
-
-	UFUNCTION()
-	void OnRep_ServerState();
+	UPROPERTY(VisibleAnywhere)
+	UGoKartMovementReplicator* MovementReplicator;
 	
 	void MoveForward(float Value);
 	void MoveRight(float Value);
 
-	UFUNCTION(Server, Reliable, WithValidation)
-	void Server_SendMove(FGoKartMove Move);
-
-	void ClearAcknowledgeMoves(FGoKartMove LastMove);
 };
