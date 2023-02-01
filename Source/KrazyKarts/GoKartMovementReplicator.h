@@ -40,9 +40,6 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-	// TArray<FGoKartMove> GetUnacknowledgeMoves() const {return UnacknowledgeMoves*;}
-	void SetUnacknowledgeMove(FGoKartMove Value) { UnacknowledgeMoves.Add(Value); }
-
 	FGoKartState GetServerState() const { return ServerState; }
 
 	UFUNCTION(Server, Reliable, WithValidation)
@@ -63,4 +60,6 @@ private:
 	void OnRep_ServerState();
 
 	void ClearAcknowledgeMoves(FGoKartMove LastMove);
+
+	void UpdateServerState(const FGoKartMove& Move);
 };
