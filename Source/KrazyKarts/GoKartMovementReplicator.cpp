@@ -41,7 +41,7 @@ void UGoKartMovementReplicator::TickComponent(float DeltaTime, ELevelTick TickTy
 
 	if (GetOwnerRole() == ROLE_SimulatedProxy)
 	{
-		MovementComponent->SimulateMove(ServerState.LastMove);
+		ClientTick(DeltaTime);
 	}
 
 	// If it is the server and in control of the pawn
@@ -59,10 +59,26 @@ void UGoKartMovementReplicator::GetLifetimeReplicatedProps( TArray< FLifetimePro
 
 void UGoKartMovementReplicator::OnRep_ServerState()
 {	
+	switch (GetOwnerRole())
+	{
+	case ROLE_AutonomousProxy:
+		AutonomousProxy_OnRep_ServerState();
+		break;
+	case ROLE_SimulatedProxy:
+		SimulatedProxy_OnRep_ServerState();
+		break;
+	default:
+		break;
+	}
+}
+
+void UGoKartMovementReplicator::AutonomousProxy_OnRep_ServerState()
+{
 	if (MovementComponent == nullptr) return;
 
 	MovementComponent->SetVelocity(ServerState.Velocity);
 	GetOwner()->SetActorTransform(ServerState.Transform);
+	
 	ClearAcknowledgeMoves(ServerState.LastMove);
 
 	// Simulate unacknowledge moves to be ahead of lag issues
@@ -70,6 +86,36 @@ void UGoKartMovementReplicator::OnRep_ServerState()
 	{	
 		MovementComponent->SimulateMove(Move);
 	}
+}
+
+void UGoKartMovementReplicator::SimulatedProxy_OnRep_ServerState()
+{
+	ClientTimeBetweenLastUpdates = ClientTimeSinceUpdate;
+	ClientTimeSinceUpdate = 0;
+
+	ClientStartTransform = GetOwner()->GetActorTransform();
+}
+
+void UGoKartMovementReplicator::ClientTick(float DeltaTime)
+{
+	ClientTimeSinceUpdate += DeltaTime;
+
+	if (ClientTimeBetweenLastUpdates < KINDA_SMALL_NUMBER) return;
+
+	FVector StartLocation = ClientStartTransform.GetLocation();
+	FVector TargetLocation = ServerState.Transform.GetLocation();
+	float LerpRatio = ClientTimeSinceUpdate / ClientTimeBetweenLastUpdates;
+
+	FVector NextLocation = FMath::LerpStable(StartLocation, TargetLocation, LerpRatio);
+	
+	GetOwner()->SetActorLocation(NextLocation);
+
+	FQuat StartRotation = ClientStartTransform.GetRotation();
+	FQuat TargetRotation = ServerState.Transform.GetRotation();
+
+	FQuat NextRotation = FQuat::Slerp(StartRotation, TargetRotation, LerpRatio);
+
+	GetOwner()->SetActorRotation(NextRotation);
 }
 
 void UGoKartMovementReplicator::Server_SendMove_Implementation(FGoKartMove Move)
@@ -108,3 +154,4 @@ void UGoKartMovementReplicator::UpdateServerState(const FGoKartMove& Move)
 	ServerState.Transform = GetOwner()->GetActorTransform();
 	ServerState.Velocity = MovementComponent->GetVelocity();
 }
+

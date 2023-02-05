@@ -56,10 +56,19 @@ private:
 	UPROPERTY()
 	UGoKartMovementComponent* MovementComponent;
 
+	float ClientTimeSinceUpdate;
+	float ClientTimeBetweenLastUpdates;
+	FTransform ClientStartTransform;
+
 	UFUNCTION()
 	void OnRep_ServerState();
+	void AutonomousProxy_OnRep_ServerState();
+	void SimulatedProxy_OnRep_ServerState();
+
+	void ClientTick(float DeltaTime);
 
 	void ClearAcknowledgeMoves(FGoKartMove LastMove);
 
 	void UpdateServerState(const FGoKartMove& Move);
+
 };
