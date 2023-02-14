@@ -70,6 +70,9 @@ private:
 	UPROPERTY()
 	UGoKartMovementComponent* MovementComponent;
 
+	UPROPERTY()
+	USceneComponent* MeshOffsetRoot;
+
 	float ClientTimeSinceUpdate;
 	float ClientTimeBetweenLastUpdates;
 	FTransform ClientStartTransform;
@@ -90,5 +93,8 @@ private:
 	void ClearAcknowledgeMoves(FGoKartMove LastMove);
 
 	void UpdateServerState(const FGoKartMove& Move);
+
+	UFUNCTION(BlueprintCallable)
+	void SetMeshOffsetRoot(	USceneComponent* Root) { MeshOffsetRoot = Root; }
 
 };
