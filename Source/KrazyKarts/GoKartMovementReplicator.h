@@ -78,6 +78,8 @@ private:
 	FTransform ClientStartTransform;
 	FVector ClientStartVelocity;
 
+	float ClientSimulatedTime;
+
 	UFUNCTION()
 	void OnRep_ServerState();
 	void AutonomousProxy_OnRep_ServerState();
